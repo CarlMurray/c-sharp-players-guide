@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulas Soup", "Simulas Sou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sandbox", "sandbox\sandbox.csproj", "{A3D36B51-EF60-4D90-9619-ADF528033A96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vin Fletchers Arrows", "Vin Fletchers Arrows\Vin Fletchers Arrows.csproj", "{42A1AE16-7B08-42AB-B539-EB5B9CF20191}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{A3D36B51-EF60-4D90-9619-ADF528033A96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3D36B51-EF60-4D90-9619-ADF528033A96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3D36B51-EF60-4D90-9619-ADF528033A96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42A1AE16-7B08-42AB-B539-EB5B9CF20191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42A1AE16-7B08-42AB-B539-EB5B9CF20191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42A1AE16-7B08-42AB-B539-EB5B9CF20191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42A1AE16-7B08-42AB-B539-EB5B9CF20191}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

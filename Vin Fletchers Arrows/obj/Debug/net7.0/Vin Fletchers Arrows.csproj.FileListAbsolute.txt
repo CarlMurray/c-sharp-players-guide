@@ -1,0 +1,15 @@
+/home/carl/Documents/c-sharp-players-guide/Vin Fletchers Arrows/bin/Debug/net7.0/Vin Fletchers Arrows
+/home/carl/Documents/c-sharp-players-guide/Vin Fletchers Arrows/bin/Debug/net7.0/Vin Fletchers Arrows.deps.json
+/home/carl/Documents/c-sharp-players-guide/Vin Fletchers Arrows/bin/Debug/net7.0/Vin Fletchers Arrows.runtimeconfig.json
+/home/carl/Documents/c-sharp-players-guide/Vin Fletchers Arrows/bin/Debug/net7.0/Vin Fletchers Arrows.dll
+/home/carl/Documents/c-sharp-players-guide/Vin Fletchers Arrows/bin/Debug/net7.0/Vin Fletchers Arrows.pdb
+/home/carl/Documents/c-sharp-players-guide/Vin Fletchers Arrows/obj/Debug/net7.0/Vin Fletchers Arrows.csproj.AssemblyReference.cache
+/home/carl/Documents/c-sharp-players-guide/Vin Fletchers Arrows/obj/Debug/net7.0/Vin Fletchers Arrows.GeneratedMSBuildEditorConfig.editorconfig
+/home/carl/Documents/c-sharp-players-guide/Vin Fletchers Arrows/obj/Debug/net7.0/Vin Fletchers Arrows.AssemblyInfoInputs.cache
+/home/carl/Documents/c-sharp-players-guide/Vin Fletchers Arrows/obj/Debug/net7.0/Vin Fletchers Arrows.AssemblyInfo.cs
+/home/carl/Documents/c-sharp-players-guide/Vin Fletchers Arrows/obj/Debug/net7.0/Vin Fletchers Arrows.csproj.CoreCompileInputs.cache
+/home/carl/Documents/c-sharp-players-guide/Vin Fletchers Arrows/obj/Debug/net7.0/Vin Fletchers Arrows.dll
+/home/carl/Documents/c-sharp-players-guide/Vin Fletchers Arrows/obj/Debug/net7.0/refint/Vin Fletchers Arrows.dll
+/home/carl/Documents/c-sharp-players-guide/Vin Fletchers Arrows/obj/Debug/net7.0/Vin Fletchers Arrows.pdb
+/home/carl/Documents/c-sharp-players-guide/Vin Fletchers Arrows/obj/Debug/net7.0/Vin Fletchers Arrows.genruntimeconfig.cache
+/home/carl/Documents/c-sharp-players-guide/Vin Fletchers Arrows/obj/Debug/net7.0/ref/Vin Fletchers Arrows.dll
