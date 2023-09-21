@@ -11,11 +11,14 @@ for (int i = 0; i < dogs.Length; i++)
     dogs[i].Bark();
 }
 
+cooper.SetAge(5);
+Console.WriteLine($"{cooper.GetName()} turned {cooper.GetAge()}");
+
 class Dog
 {
-    public int _age = 0;
-    public string _name = "Puppy";
-    public string _breed = "Unknown";
+    private int _age = 0;
+    private string _name = "Puppy";
+    private string _breed = "Unknown";
 
     public Dog(int age, string name, string breed)
     {
@@ -33,4 +36,13 @@ class Dog
     {
         Console.WriteLine($"{_name} says woof!");
     }
+
+    public void SetAge(int age)
+    {
+        _age = age;
+    } 
+
+    public int GetAge() => _age;
+    public string GetBreed() => _breed;
+    public string GetName() => _name;
 }

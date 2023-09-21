@@ -34,16 +34,16 @@ void CreateArrow()
     } while (length < 60 || length > 100);
 
     Arrow arrow = new Arrow(arrowHead, fletching, length);
-    
+
     // GET COST
     Console.WriteLine(arrow.GetCost());
 }
 
 class Arrow
 {
-    public ArrowHead _arrowHead;
-    public Fletching _fletching;
-    public float _length;
+    private ArrowHead _arrowHead;
+    private Fletching _fletching;
+    private float _length;
 
     public Arrow(ArrowHead arrowHead, Fletching fletching, float length)
     {
@@ -56,6 +56,11 @@ class Arrow
     {
         Console.WriteLine($"{_arrowHead}, {_fletching}, {_length}");
     }
+
+    public ArrowHead GetArrowHead() => _arrowHead;
+    public Fletching GetFletching() => _fletching;
+    public float GetLength() => _length;
+
 
     public string GetCost()
     {
