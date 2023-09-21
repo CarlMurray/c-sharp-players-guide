@@ -41,26 +41,21 @@ void CreateArrow()
 
 class Arrow
 {
-    private ArrowHead _arrowHead;
-    private Fletching _fletching;
-    private float _length;
+    public ArrowHead ArrowHead { get; }
+    public Fletching Fletching { get; }
+    public float Length { get; }
 
     public Arrow(ArrowHead arrowHead, Fletching fletching, float length)
     {
-        _arrowHead = arrowHead;
-        _fletching = fletching;
-        _length = length;
+        ArrowHead = arrowHead;
+        Fletching = fletching;
+        Length = length;
     }
 
     public void PrintArrow()
     {
-        Console.WriteLine($"{_arrowHead}, {_fletching}, {_length}");
+        Console.WriteLine($"{ArrowHead}, {Fletching}, {Length}");
     }
-
-    public ArrowHead GetArrowHead() => _arrowHead;
-    public Fletching GetFletching() => _fletching;
-    public float GetLength() => _length;
-
 
     public string GetCost()
     {
@@ -69,7 +64,7 @@ class Arrow
         float fletchingCost = 0;
         float lengthCost = 0;
 
-        switch (_arrowHead)
+        switch (ArrowHead)
         {
             case ArrowHead.Steel:
                 arrowHeadCost = 10;
@@ -82,7 +77,7 @@ class Arrow
                 break;
         }
 
-        switch (_fletching)
+        switch (Fletching)
         {
             case Fletching.Plastic:
                 fletchingCost = 10;
@@ -95,7 +90,7 @@ class Arrow
                 break;
         }
 
-        lengthCost = (_length) * (float)0.05;
+        lengthCost = (Length) * (float)0.05;
 
         totalCost = arrowHeadCost + fletchingCost + lengthCost;
         return $"Total cost is {totalCost} gold.";
