@@ -1,48 +1,66 @@
 ﻿using System.Reflection.Metadata.Ecma335;
 
-Dog cooper = new Dog(2, "Cooper", "Golden Retriever");
-Dog lexi = new Dog(3, "Lexi", "Golden Retriever");
+Dog cooper = new Dog() { Age = 5, Name = "Cooper", Breed = "Golden Retriever" };
+Dog lexi = new Dog() { Age = 6, Name = "Lexi", Breed = "Golden Retriever" };
 
-Dog[] dogs = { cooper, lexi };
+Console.WriteLine($"Cooper is {cooper.Age}");
+Console.WriteLine($"Cooper is a {cooper.Breed}");
+cooper.ShowDetails();
+cooper.Bark();
 
-for (int i = 0; i < dogs.Length; i++)
+var dogs = Utilities.BreedDogs(cooper, lexi);
+foreach (Dog dog in dogs)
 {
-    dogs[i].ShowDetails();
-    dogs[i].Bark();
+    Console.WriteLine(dog.Name);
+    dog.Bark();
 }
 
-cooper.SetAge(5);
-Console.WriteLine($"{cooper.GetName()} turned {cooper.GetAge()}");
-
-class Dog
+public static class Utilities
 {
-    private int _age = 0;
-    private string _name = "Puppy";
-    private string _breed = "Unknown";
-
-    public Dog(int age, string name, string breed)
+    public static Dog[] BreedDogs(Dog male, Dog female)
     {
-        _age = age;
-        _name = name;
-        _breed = breed;
+        Dog[] dogs = new Dog[5];
+        for (int i = 0; i < 5; i++)
+        {
+            dogs[i] = new Dog() { Age = 0, Name = $"Puppy {i + 1}", Breed = $"{female.Breed}" };
+        }
+
+        Console.WriteLine($"{male.Name} and {female.Name} had puppies!");
+        return dogs;
+    }
+}
+
+
+public class Dog
+{
+    private int _age;
+    private static int _minAge = 0;
+    public string Name { get; init; }
+    public string Breed { get; init; }
+
+    public int Age
+    {
+        get => _age;
+        set
+        {
+            if (value < _minAge)
+            {
+                Console.WriteLine($"Age must be greater than {_minAge}.");
+            }
+            else
+            {
+                _age = value;
+            }
+        }
     }
 
     public void ShowDetails()
     {
-        Console.WriteLine($"Name: {_name}; Age: {_age}; Breed: {_breed}");
+        Console.WriteLine($"Name: {Name}; Age: {Age}; Breed: {Breed}");
     }
 
     public void Bark()
     {
-        Console.WriteLine($"{_name} says woof!");
+        Console.WriteLine($"{Name} says woof!");
     }
-
-    public void SetAge(int age)
-    {
-        _age = age;
-    } 
-
-    public int GetAge() => _age;
-    public string GetBreed() => _breed;
-    public string GetName() => _name;
 }
