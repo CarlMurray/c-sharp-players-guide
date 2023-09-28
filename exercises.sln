@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Point", "The Point\The 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The colour", "The colour\The colour.csproj", "{E299F02C-510B-4E2B-BDBC-D87E8D4A4D37}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Card", "The Card\The Card.csproj", "{71207F34-E684-421A-BA54-A4907F8E509F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,9 +52,14 @@ Global
 		{E299F02C-510B-4E2B-BDBC-D87E8D4A4D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E299F02C-510B-4E2B-BDBC-D87E8D4A4D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E299F02C-510B-4E2B-BDBC-D87E8D4A4D37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71207F34-E684-421A-BA54-A4907F8E509F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71207F34-E684-421A-BA54-A4907F8E509F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71207F34-E684-421A-BA54-A4907F8E509F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71207F34-E684-421A-BA54-A4907F8E509F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A7FE98BE-84BE-49AC-A623-A158FBECC80F} = {217664AE-BAA2-4EE8-A9F1-9FF3BA3C78D8}
 		{E299F02C-510B-4E2B-BDBC-D87E8D4A4D37} = {217664AE-BAA2-4EE8-A9F1-9FF3BA3C78D8}
+		{71207F34-E684-421A-BA54-A4907F8E509F} = {217664AE-BAA2-4EE8-A9F1-9FF3BA3C78D8}
 	EndGlobalSection
 EndGlobal
